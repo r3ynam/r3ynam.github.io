@@ -10,7 +10,7 @@ body {
   background-image: url('background.jpeg');
 }
 .content{
-    padding:25px 50px;
+    padding:250px 500px;
     top: 50%;
     position: absolute;
     transform: translateY(-50%);
