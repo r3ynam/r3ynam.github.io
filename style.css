@@ -8,6 +8,7 @@
 }
 body {
   background-image: url('brick.jpg');
+  filter:blur(20%)
 }
 .content{
     padding:250px 500px;
