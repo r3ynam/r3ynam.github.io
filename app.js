@@ -56,7 +56,7 @@ function updateTimeSegment(segmentElement, timeValue) {
         segmentElements.segmentOverlay.classList.remove('flip');
         updateSegmentValues(
             segmentElements.segmentDisplayBottom,
-            segmentElements.segmentOverlayTop,
+            segmentElements.segmentDisplayTop,
             timeValue
         );
 
@@ -65,7 +65,7 @@ function updateTimeSegment(segmentElement, timeValue) {
     segmentElements.segmentOverlay.addEventListner('animationend', finishAnimation);
 }
 
-function updateTimeSection(sectionID, timevalue) { //14
+function updateTimeSection(sectionID, timeValue) { //14
     const firstNumber = Math.floor(timeValue / 10); //1
     const secondNumber = timeValue % 10;//4
 
