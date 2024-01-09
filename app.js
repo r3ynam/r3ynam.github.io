@@ -77,14 +77,25 @@ function getTimeRemaining(targetDateTime) {
         (targetDateTime - nowTime) / 1000
       );
 
+      const complete = nowTime >= targetDateTime;
+
+      if (complete) {
+        return{
+            complete,
+            seconds: 0,
+            minutes: 0,
+            hours: 0,
+        }
+      }
     const hours = Math.floor(secondsRemaining / 60/ 60);
     const minutes = Math.floor(secondsRemaining /60) - hours * 60;
     const seconds =secondsRemaining % 60;
 
     return{
+        complete,
         seconds,
         minutes,
-        hours
+        hours,
     };
 }
 function updateAllSegments() {
@@ -96,7 +107,8 @@ function updateAllSegments() {
     updateTimeSection('hours', timeRemainingBits.hours);
 }    
 
-const countdownTimer = setInterval(() => {
-    updateAllSegments();
-}, 1000);
+//const countdownTimer = setInterval(() => {
+   // updateAllSegments();
+//}, 1000);
+
 updateAllSegments();
