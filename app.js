@@ -37,6 +37,13 @@ function updateSegmentValues(displayElement, overlayElement, value){
 function updateTimeSegment(segmentElement, timeValue) {
     const segmentElements =getTimeSegmentElements(segmentElement);
 
+    if(
+        parseInt(segmentElements.segmentDisplayTop.textContent, 10) === 
+        timeValue
+    ) {
+        return;
+    }
+
     segmentElements.segmentOverlay.classList.add('flip');
 
     updateSegmentValues(
