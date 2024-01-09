@@ -13,7 +13,6 @@ body {
     display: flex;
     gap: 30px;
     font-family:sans-serif;
-    z-index: 6;
 }
 .time-section{
     text-align:center;
@@ -131,7 +130,6 @@ body {
     background: linear-gradient(to left, #fef884, #ff75ea);
     width: 100%;
     height: 100vh;
-    z-index: 2;
 }
 .box-area{
     position:absolute;
