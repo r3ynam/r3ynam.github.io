@@ -69,3 +69,28 @@ function updateTimeSection(sectionID, timevalue) { //14
     updateTimeSegment(timeSegment[0], firstNumber);
     updateTimeSegment(timeSegment[1], secondNumber);
 }
+
+function getTimeRemaining(targetDateTime) {
+    const nowTime = Date.now(); //13242342000
+    const secondsRemaining = math.floor(targetDateTime - nowTime) / 1000;
+
+    const hours = Math.floor(secondsRemaining / 60/ 60);
+    const minutes = Math.floor(secondsRemaining /60) - hours * 60;
+    const seconds =secondsRemaining % 60;
+
+    return{
+        seconds,
+        minutes,
+        hours
+    };
+}
+function updateAllSegments() {
+    const targetTimeStamp = new Date (targetDate).getTime();
+    const getTimeRemainingBits = getTimeRemaining(targetTimeStamp);
+
+    updateTimeSection('seconds', timeRemainingBits.seconds);
+    updateTimeSection('minutes', timeRemainingBits.minutes);
+    updateTimeSection('hours', timeRemainingBits.hours);
+}    
+
+updateAllSegments();
