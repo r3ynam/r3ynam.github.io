@@ -46,7 +46,7 @@ body {
     width: 25px;
     height: 25px;
     background: rgba(255,255,255,0.2);
-    animation: animate 20s linear infinite;
+    animation: move 20s linear infinite;
     bottom: -150px;
 }
 .box-area li:nth-child(1){
@@ -87,7 +87,7 @@ body {
     height: 110px;
     animation-delay: 3.5s;
 }
-@keyframes animate{
+@keyframes move{
     0%{
         transform: translateY(0) rotate(0deg); 
         opacity: 1;
