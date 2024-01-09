@@ -26,7 +26,7 @@ function getTimeSegmentElements(segmentElement) {
         segmentOverlay,
         segmentOverlayTop,
         segmentOverlayBottom
-    }
+    };
 }
 
 function updateSegmentValues(displayElement, overlayElement, value){
