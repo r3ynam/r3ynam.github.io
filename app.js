@@ -62,7 +62,7 @@ function updateTimeSegment(segmentElement, timeValue) {
 
         this.removeEventListner('animationend', finishAnimation);
     }
-    segmentElements.segmentOverlay.addEventListner('animationend', finishAnimation)
+    segmentElements.segmentOverlay.addEventListner('animationend', finishAnimation);
 }
 
 function updateTimeSection(sectionID, timevalue) { //14
