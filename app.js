@@ -37,5 +37,5 @@ function updateSegmentValues(displayElement, overlayElement, value){
 function updateTimeSegment(segmentElement, timeValue) {
     const segmentElement =getTimeSegmentElements(segmentElement);
 
-    segmentElements.segmentOverlay
+    segmentElements.segmentOverlay.classList.add('flip')
 }
