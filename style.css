@@ -14,6 +14,21 @@ body {
     height: 50px;
     float: right;
 }
+.banner-text ul li{
+    display: inline-block;
+    padding: 40px 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+}
+.banner-text h2{
+    color: #fff;
+    font-size: 50px;
+    margin-top: 20%;
+}
+.animation-area{
+    background: linear-gradient(to left, #8942a8, #ba382f);
+}
 /*.content{
     padding:250px 500px;
     top: 50%;
