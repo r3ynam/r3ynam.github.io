@@ -96,4 +96,7 @@ function updateAllSegments() {
     updateTimeSection('hours', timeRemainingBits.hours);
 }    
 
+const countdownTimer = setInterval(() => {
+    updateAllSegments();
+}, 1000);
 updateAllSegments();
