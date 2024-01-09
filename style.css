@@ -80,6 +80,7 @@ body {
     color: #fff;
     background-color: #333;
     border-top: 2px solid black;
+    transform-origin: top;
 }
 .segment-overlay.flip .segment-overlay_top{
     animation: flip-top 0.8s linear;
