@@ -49,7 +49,7 @@ function updateTimeSegment(segmentElement, timeValue) {
         segmentElements.segmentOverlay.classList.remove('flip');
         updateSegmentValues(
             segmentElements.segmentDisplayBottom,
-            segmentElements.segmentDisplayTop,
+            segmentElements.segmentOverlayTop,
             timeValue
         );
 
