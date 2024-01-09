@@ -83,14 +83,14 @@ body {
     transform-origin: top;
 }
 .segment-overlay.flip .segment-overlay_top{
-    animation: flip-top 0.8s linear;
+    animation: flip 0.8s linear;
     animation-name:flip;
 }
 .segment-overlay.flip .segment-overlay_bottom{
     animation-name: flip-bottom;
     animation: flip-bottom 0.8s linear;
 }
-@keyframe flip{
+@keyframes flip{
     0%{
         transform: rotateX(0deg);
     }
@@ -98,7 +98,7 @@ body {
         transform:rotateX(-90deg);
     }
 }
-@keyframe flip-bottom{
+@keyframes flip-bottom{
     0%, 50%{
         transform: rotateX(90deg);
     }
