@@ -3,11 +3,13 @@
     margin: 0;
     padding: 0;
 }
+/*
 body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  box-sizing: border-box; /*new*/
+  box-sizing: border-box; 
+  new
   padding-top: 100px;
-}
+} */
 .countdown{
     display: flex;
     gap: 30px;
