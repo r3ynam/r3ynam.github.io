@@ -78,6 +78,22 @@ body {
     background-color: #333;
     border-top: 2px solid black;
 }
+@keyframe flip-top{
+    0%{
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform:rotateX(-90deg);
+    }
+}
+@keyframe flip-bottom{
+    0%{
+        transform: rotateX(90deg);
+    }
+    100%{
+        transform:rotateX(0deg);
+    }
+}
 /*new*/
 .banner-text{
     width: 100%;
