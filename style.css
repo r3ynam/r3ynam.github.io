@@ -94,12 +94,12 @@ body {
     0%{
         transform: rotateX(0deg);
     }
-    100%{
+    50%, 100%{
         transform:rotateX(-90deg);
     }
 }
 @keyframe flip-bottom{
-    0%{
+    0%, 50%{
         transform: rotateX(90deg);
     }
     100%{
