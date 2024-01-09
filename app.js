@@ -53,7 +53,19 @@ function updateTimeSegment(segmentElement, timeValue) {
             timeValue
         );
 
-        this.removeEventListner('animationend')
+        this.removeEventListner('animationend', finishAnimation);
     }
     segmentElements.segmentOverlay.addEventListner('animationend', finishAnimation)
+}
+
+function updateTimeSection(sectionID, timevalue) { //14
+    const firstNumber = Math.floor(timeValue / 10); //1
+    const secondNumber = timeValue % 10;//4
+
+    const sectionElement = document.getElementById(sectionID);
+    const timeSegments =
+     sectionElement.querySelectorAll('.time-segment');
+    
+    updateTimeSegment(timeSegment[0], firstNumber);
+    updateTimeSegment(timeSegment[1], secondNumber);
 }
