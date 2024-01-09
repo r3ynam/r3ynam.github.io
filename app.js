@@ -72,7 +72,8 @@ function updateTimeSection(sectionID, timevalue) { //14
 
 function getTimeRemaining(targetDateTime) {
     const nowTime = Date.now(); //13242342000
-    const secondsRemaining = math.floor(targetDateTime - nowTime) / 1000;
+    const secondsRemaining = 
+      Math.floor((targetDateTime - nowTime) / 1000);
 
     const hours = Math.floor(secondsRemaining / 60/ 60);
     const minutes = Math.floor(secondsRemaining /60) - hours * 60;
