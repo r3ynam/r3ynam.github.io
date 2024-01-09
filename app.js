@@ -1,4 +1,4 @@
-const targetDate = '2024-12-12T19:00:00';
+const targetDate = '2024-01-10T19:00:00';
 
 function getTimeSegmentElements(segmentElement) {
     const segmentDisplay = segmentElement.querySelector(
