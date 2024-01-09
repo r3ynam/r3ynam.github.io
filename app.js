@@ -105,10 +105,16 @@ function updateAllSegments() {
     updateTimeSection('seconds', timeRemainingBits.seconds);
     updateTimeSection('minutes', timeRemainingBits.minutes);
     updateTimeSection('hours', timeRemainingBits.hours);
+
+    return timeRemainingBits.complete;
 }    
 
-//const countdownTimer = setInterval(() => {
-   // updateAllSegments();
-//}, 1000);
+const countdownTimer = setInterval(() => {
+    const isComplete = updateAllSegments();
+
+    if (isComplete) {
+        clearInterval(countdownTimer);
+    }
+}, 1000);
 
 updateAllSegments();
