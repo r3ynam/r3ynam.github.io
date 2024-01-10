@@ -15,7 +15,7 @@ header{
     z-index: 10000;
 }
 header .logo{
-color:#fff;
+color:#ff5fff;
 font-weight: 700;
 text-decoration: none;
 font-size:2em;
@@ -35,12 +35,12 @@ header ul li{
 header ul li a{
     text-decoration: none;
     padding:6px 15px;
-    color:#fff;
+    color:#ffffff;
     border-radius: 20px;
 }
 header ul li a:hover,
 header ul li a.active{
-    background:#fff;
+    background:#ff5fff;
     color:#2b1055;
 }
 /* header ends */
