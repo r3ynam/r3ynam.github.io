@@ -28,6 +28,22 @@ header ul{
     background: rgba(0,0,0,0);
     transition:1s;
 }
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding:6px 15px;
+    color:#fff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active{
+    background:#fff;
+    color:#2b1055;
+}
+/* header ends */
 body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   box-sizing: border-box; 
