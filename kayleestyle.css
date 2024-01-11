@@ -23,9 +23,11 @@ body{
     z-index: 2;
 }
 .banner-text h2{
+    position: relative;
     color: #fff;
     font-size: 50px;
     margin-top: 20%;
+    z-index: 1;
 }
 /*change*/
 .animation-area{
