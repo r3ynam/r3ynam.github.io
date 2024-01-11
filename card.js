@@ -53,8 +53,10 @@ cNumber.addEventListener('keyup', function(e){
         ccNum.style.border = "1px solid greenyellow";
     }
 });
+let edate = document.getElementById('e-date');
+eDate.addEventListener('keyup', function(e){
 
-let newInput = edate.value;
+let newInput = eDate.value;
 
 if(e.which !== 8) {
     var numChars = e.target.value.length;
@@ -67,8 +69,9 @@ if(e.which !== 8) {
 }
 
 if(newInput.length<5){
-    edate.style.border = "1px solid red";
+    eDate.style.border = "1px solid red";
 }
 else{
     eDate.style.border ="1px solid greenyellow"
 }
+});
