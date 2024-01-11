@@ -53,3 +53,22 @@ cNumber.addEventListener('keyup', function(e){
         ccNum.style.border = "1px solid greenyellow";
     }
 });
+
+let newInput = edate.value;
+
+if(e.which !== 8) {
+    var numChars = e.target.value.length;
+    if (numChars == 2){
+        var thisVal = e.target.value;
+        thisVal += '/';
+        e.target.value = thisVal;
+        console.log(thisVal.length)
+    }
+}
+
+if(newInput.length<5){
+    edate.style.border = "1px solid red";
+}
+else{
+    eDate.style.border ="1px solid greenyellow"
+}
