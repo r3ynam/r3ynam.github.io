@@ -34,3 +34,22 @@ function doFunB(){
     iconC.style.color = "#greenyellow";
     cDetails.style.display = "none";
 }
+let cNumber = document.getElementById('number');
+cNumber.addEventListener('keyup', function(e){
+    let num = cNumber.value;
+
+    let newValue = '';
+    num = num.replace(/\s/g, '');
+    for(var i = 0; i < num.length; i++){
+        if(i%4 == 0) newValue =newValue.concat('');
+        newValue = newValue.concat(num[i]);
+        cNumber.value = newValue;
+    }
+    let ccNum = document.getElementById('c-number');
+    if(num.length<16){
+        ccNum.style.border= "1px solid red";
+    }
+    else{
+        ccNum.style.border = "1px solid greenyellow";
+    }
+});
