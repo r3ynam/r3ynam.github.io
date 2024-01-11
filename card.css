@@ -94,5 +94,59 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+input{
+    border:none;
+    border-radius: 3px;
+    outline: none;
+}
+.c-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
     margin: 20px 0;
+}
+.cc-exp{
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 12px;
+    width: 150px;
+}
+.c-details .cvv-box{
+    border: 1px solid #aaa;
+    margin-top: 10px;
+    padding: 12px;
+    height: 50px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+.cc-cvv{
+    width: 60px;
+}
+.email input{
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 12px;
+    height: 50px;
+    margin-top: 10px;
+}
+button{
+    width: 100%;
+    border: none;
+    height: 50px;
+    border-radius: 3px;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #444;
+    background-color: greenyellow;
+}
+.button:hover{
+    background-color: #444;
+    color: white;
+    cursor: pointer;
 }
