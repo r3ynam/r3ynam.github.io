@@ -557,3 +557,250 @@ input{
         </body>
     </html>
 </html>
+
+
+<--*
+{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    padding:30px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 10000;
+}
+header .logo{
+color:#ff5fff;
+font-weight: 700;
+text-decoration: none;
+font-size:2em;
+text-transform: uppercase;
+}
+header ul{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    background: rgba(0,0,0,0);
+    transition:1s;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding:6px 15px;
+    color:#ffffff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active{
+    background:#ff5fff;
+    color:#2b1055;
+}
+/* header ends */
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  box-sizing: border-box; 
+  /*new*/
+} 
+.countdown{
+    display: flex;
+    gap: 30px;
+    font-family:sans-serif;
+}
+.time-section{
+    text-align:center;
+    font-size:30px;
+}
+.time-group{
+    display:flex;
+    gap:10px;
+}
+.time-segment{
+    display:block;
+    font-size:100px;
+    font-weight:900;
+    width:100px;
+}
+.segment-display{
+    position:relative;
+    height: 100%;
+}
+.segment-display_top,
+.segment-display_bottom
+{
+    overflow:hidden;
+    text-align:center;
+    width:100%;
+    height:50%;
+    position:relative;
+}
+.segment-display_top{
+    background-color:#111;
+    color: #eee;
+    line-height:1.5;
+}
+.segment-display_bottom{
+    background-color: #333;
+    color:#fff;
+    line-height:0;
+}
+.segment-overlay{
+    position:absolute;
+    top: 0;
+    height: 100%;
+    width: 100px;
+    perspective: 400px;
+}
+.segment-overlay_top,
+.segment-overlay_bottom{
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+}
+.segment-overlay_top{
+    top: 0;
+    line-height: 1.5;
+    color:#eee;
+    background-color: #111;
+    transform-origin: bottom;
+}
+.segment-overlay_bottom{
+    bottom:0;
+    line-height: 0;
+    color: #fff;
+    background-color: #333;
+    border-top: 2px solid black;
+    transform-origin: top;
+}
+.segment-overlay.flip .segment-overlay_top{
+    animation: flip-top 0.8s linear;
+    animation-name:flip-top;
+}
+.segment-overlay.flip .segment-overlay_bottom{
+    animation-name: flip-bottom;
+    animation: flip-bottom 0.8s linear;
+}
+@keyframes flip-top{
+    0%{
+        transform: rotateX(0deg);
+    }
+    50%, 100%{
+        transform:rotateX(-90deg);
+    }
+}
+@keyframes flip-bottom{
+    0%, 50%{
+        transform: rotateX(90deg);
+    }
+    100%{
+        transform:rotateX(0deg);
+    }
+}
+/*new*/
+.banner-text{
+    width: 100%;
+    position:absolute;
+}
+.banner-text ul{
+    height: 50px;
+    float: right;
+}
+.banner-text ul li{
+    display: inline-block;
+    padding: 40px 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+}
+.banner-text h2{
+    color: #fff;
+    font-size: 50px;
+    margin-top: 20%;
+}
+.animation-area{
+    background: linear-gradient(to left, #fef884, #ff75ea);
+    width: 100%;
+    height: 100vh;
+}
+.box-area{
+    position:absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    overflow:hidden;
+}
+.box-area li{
+    position: absolute; 
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255,255,255,0.2);
+    animation: move 20s linear infinite;
+    bottom: -150px;
+}
+.box-area li:nth-child(1){
+    animation-name: move;
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(2){
+    animation-name: move;
+    left: 12%;
+    width: 30px;
+    height:30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+.box-area li:nth-child(3){
+    animation-name: move;
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+}
+.box-area li:nth-child(4){
+    animation-name: move;
+    left: 70%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+.box-area li:nth-child(5){
+    animation-name: move;
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(6){
+    animation-name: move;
+    left: 15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+}
+@keyframes move{
+    0%{
+        transform: translateY(0) rotate(0deg); 
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg); 
+        opacity: 0;
+    }
+}-->
