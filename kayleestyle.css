@@ -29,6 +29,7 @@ body{
     background: linear-gradient(to left, #fef884, #ff75ea);
     width: 100%;
     height: 100vh;
+    z-index: 0;
 }
 .box-area{
     position:absolute;
