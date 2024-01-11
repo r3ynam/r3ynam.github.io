@@ -14,6 +14,7 @@ body{
     float: right;
 }
 .banner-text ul li{
+    position: relative;
     display: inline-block;
     padding: 40px 15px;
     text-transform: uppercase;
@@ -28,6 +29,7 @@ body{
 }
 /*change*/
 .animation-area{
+    position: fixed;
     background: linear-gradient(to left, #fef884, #ff75ea);
     width: 100%;
     height: 100vh;
