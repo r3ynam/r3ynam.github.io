@@ -14,7 +14,7 @@ body{
     float: right;
 }
 .banner-text ul li{
-    position: fixed;
+    position: absolute;
     display: inline-block;
     padding: 40px 15px;
     text-transform: uppercase;
