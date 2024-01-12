@@ -7,16 +7,71 @@
     <title>KicksforKiddos</title>
         <link rel="shortcut icon" type="image/png" href="favicon.ico">
         <link href="stylesheet.css" rel="stylesheet">
-    
+    <style>
+        *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+            }
+            body{
+                 min-height: 100vh;
+                 background: white;
+                 overflow-x: hidden;
+                 width:100%;
+                 font-family: 'Poppins', sans-serif;
+                 color:black;
+                 /* background:linear-gradient(#ff6ef3,#6ee2ff,#b73bff) */
+            }
+           header{
+                position:absolute;
+                top:0;
+                left:0;
+                width:100vw;
+                padding:30px 100px;
+                display:flex;
+                justify-content: space-between;
+                align-items:center;
+                z-index: 10000;
+            }
+            header ul{
+                display:flex;
+                justify-content: center;
+                align-content: center;
+            }
+            header ul li{
+                list-style: none;
+                margin-left: 20px;
+            }
+            header ul li a{
+                text-decoration: none;
+                padding:6px 15px;
+                color:rgb(0, 0, 0);
+                border-radius: 20px;
+            }
+            header ul li a:hover,
+            header ul li a.active{
+                background:rgb(0, 0, 0);
+                color:pink;
+            }
+            img{
+                float:left;
+                height:10%;
+                width:10%;
+            }
+            .bg-active{
+            visibility: visible;
+            opacity:1;
+        }
+    </style>
     <header>
         <img src="logo.png">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="impact.html">Impact</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="donations.html">Donations</a></li>
             <li><a href="shop.html">Shop</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-        </ul>
-    </header>
+            <li><a href="faqs.html" class="active">FAQ</a></li>
+         </ul> 
+     </header>
 </html>
