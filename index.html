@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Kicks for Kiddos</title>
-       <!-- <link href="stylesheet.css" rel="stylesheet" type="text/css">-->
+     <link href="stylesheet.css" rel="stylesheet" type="text/css">-->
         <link rel="kayleestyle.css" href="card.css">
-        <!--<script src="app.js" defer></script>-->
+        <!--<script src="app.js" defer></script>
         <style>
              *{
         margin: 0;
@@ -79,7 +79,7 @@
             </ul>
         
         </div>
-       <!-- <header>
+        <header>
             <img src="logo.png">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
@@ -88,7 +88,7 @@
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="faq.html">FAQ</a></li>
              </ul> 
-         </header>-->
+            </header>
             <div class="animation-area">
                 <ul class="box-area">
                 <li></li>
@@ -99,7 +99,7 @@
                 <li></li>
                 </ul>
             </div>
-           <!-- <h2>Welcome to our Website</h2>
+            <h2>Welcome to our Website</h2>
 
             <hr>
             <footer>
@@ -153,7 +153,7 @@
                 <p>Click here to see all Copyrighted materials</p>
             </div></a>
             </footer>-->
-            <script>
+            <!--<script>
                 let math = document.getElementById('math');
                 let text = document.getElementById('text');
                 let btn = document.getElementById('btn');
@@ -173,4 +173,345 @@
     
             </script>
     </body>  
-</html>
+</html>-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Connective Tutors</title>
+        <link rel="shortcut icon" type="image/png" href="favicon.ico">
+        <link href="stylesheet.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+            }
+            body{
+                 min-height: 100vh;
+                 background:linear-gradient(#037185, #acecff);
+                 overflow-x: hidden;
+            }
+            /* header begins */
+            header{
+                position:absolute;
+                top:0;
+                left:0;
+                width:100vw;
+                padding:30px 100px;
+display:flex;
+justify-content: space-between;
+align-items:center;
+z-index: 10000;
+}
+header .logo{
+color:#fff;
+font-weight: 700;
+text-decoration: none;
+font-size:2em;
+text-transform: uppercase;
+}
+header ul{
+display:flex;
+justify-content: center;
+align-content: center;
+background: rgba(0,0,0,0);
+transition:1s;
+}
+header ul li{
+list-style: none;
+margin-left: 20px;
+}
+header ul li a{
+text-decoration: none;
+padding:6px 15px;
+color:#fff;
+border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active{
+background:#fff;
+color:#2b1055;
+}
+/* header ends */
+section{
+position: relative;
+width: 100%;
+height: 100vh;
+padding: 100px;
+display:flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+section::before{
+content:'';
+position:absolute;
+bottom:0;
+width:100%;
+height:100px;
+background: linear-gradient(to top,#13151f,transparent);
+z-index: 1000;
+}
+section img{
+position:absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+pointer-events: none;
+}
+#text{
+position: absolute;
+color:#fff;
+white-space: nowrap;
+font-size: 7.5vw;
+z-index: 9; 
+}
+#btn{
+text-decoration: none;
+display:inline-block;
+padding: 8px 30px;
+border-radius: 40px;
+background: #fff;
+color:#2b1055;
+font-size: 1.5em;
+z-index: 9;
+transform: translateY(100px);
+}
+/* steps section begin */
+.sec{
+position: relative;
+padding: 100px;
+background: #13151f;
+/* height:100vh; */
+}
+
+/* cant tell if the height is ugly or pretty yet */
+
+.sec h2{
+font-size: 3.5em;
+margin-bottom: 10px;
+color: #fff;
+}
+.homepgsection1heading {
+font-size: 5em;
+margin-bottom: 10px;
+color: #fff;
+}
+.sec p{
+font-size: 1em;
+color:#fff;
+font-size: 30px;
+margin-left: 80px;
+}
+img{
+float:left;
+height:10%;
+width:10%;
+}
+.Tutor{
+-webkit-text-fill-color: rgba(103, 232, 255, 0.8);
+-webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.step{
+-webkit-text-fill-color: rgb(51, 230, 255);
+padding: 10px;
+/* font-weight: 550; */
+}
+.section p{
+display:flex;
+align-items: center;
+}
+.section img{
+margin-right: 20px;
+}
+.plz{ 
+position:relative;
+width:300px;
+padding:15px 0;
+text-align: center;
+margin:20px 10px;
+font-weight: bold;
+border:2px solid #00eeff93;
+background:transparent;  
+color:#fff;
+cursor:pointer;
+overflow: hidden;
+/* transform: translate(170%,0%); */
+text-transform: uppercase;
+font-size: 1.5em;
+} 
+.padding{
+padding: 0% 0% 0% 40%;
+}             
+.race{
+background: linear-gradient(#47474700, #393a3900, #00eeff59) ;
+height: 100%;
+width:0;
+position: absolute;
+left:0;
+bottom:0;
+}           
+/* this is css to numbers 1 2 and 3 */
+.grass{
+position:absolute;
+width:100px;
+padding:15px 0;
+text-align: center;
+margin:20px 10px;
+font-weight: bold;
+border:3px solid #00eeff;
+border-style: outset;
+background:transparent;  
+color:#fff;
+cursor:auto;
+overflow: hidden;
+text-transform: uppercase;
+font-size: 3em;
+transform: translate(-50%,-100%);
+}
+/* modal begins, also on style sheet but leave here for now */
+
+
+
+.content{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color:white;
+line-height: 1.3;
+}
+.subscribe button{
+padding:10px 20px;
+background:none;
+outline:none;
+border: 1px solid white;
+color:white;
+margin-top:10px;
+}
+
+.modal-container{
+background-color: rgba(0, 0, 0, 0.6);
+position:fixed;
+top:0;
+bottom:0;
+right:0;
+left:0;
+display: none;
+z-index:1001;
+}
+.modal{
+color:white;
+background-color: teal;
+border-radius:5px;
+box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+position:absolute;
+overflow:hidden;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+max-width: 100%;
+height:300px;
+width:500px;
+}
+.header{
+margin-left: 80px;
+margin-top: 50px;
+margin-bottom:5px;
+line-height:1.5;
+}
+.logo{
+font-family: Arial, Helvetica, sans-serif;
+font-size:35px;
+}
+.tagline{
+text-transform: uppercase;
+font-size: 15px;
+font-weight:400;
+letter-spacing:2px;
+}
+input{
+padding:8px;
+outline:none;
+border: 3px solid white;
+background-color:teal;
+color:white;
+}
+::placeholder{
+    color:rgb(255, 255, 255);
+}
+.subscribe{
+    padding:11px;
+    text-transform:uppercase;
+    background-color:white;
+    outline:none;
+    border:none;
+    color:teal;
+    font-weight: 700;
+}
+.close-btn{
+    background:transparent;
+    font-size: 20px;
+    position: absolute;
+    top:0;
+    right:0;
+    color:white;
+    outline:none;
+    border:none;
+    margin-right: 15px;
+    margin-top:10px;
+}
+.close-btn:hover{
+    color:black;
+    transition:0.5s;
+} 
+.subscribe:hover{
+    color:black;
+    transition:0.5s;
+}   
+.tbd{
+    padding:20px 90px;
+}  
+</style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png">
+        <ul>
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="tutorers.html">Tutors</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="faqs.html">FAQ</a></li>
+        </ul>
+    </header>
+    <section>
+        
+        <h2 id="text">Connective <span class="Tutor">Tutors</span></h2>
+        <img src="math.png" id="math">
+        <a href="#sec" id="btn">Connect</a>
+        <img src="book.png" id="book" >
+    </section>
+   
+    
+    <div class="sec" id="sec">
+        <h1 class="homepgsection1heading">Get Connected In <span class="step">3</span> Easy Steps</h1>    
+        <div class="section">
+            <br><br>
+          <p>
+          <!-- <img id="imageone" src="one.png" alt="step one" > -->
+         <span class="step">Select a Tutor</span> Choose a tutor for the subject or subjects that you need help with.
+        </p>
+        <button class="grass">1</button>
+        </div>
+        <br><br><br><br>
+        </div>
+        </body>
+        </html>
