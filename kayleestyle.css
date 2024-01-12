@@ -132,9 +132,17 @@ body{
     }
 }
 /*footer*/
+ul, li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    transition: .5s;
+    color:#fff;
+}
 footer{
-    background-color: rgb(255, 255, 255);
-    color:#000000;
+    background-color: rgb(24, 23, 23);
+    color:#fff;
     /* width:100vw; */
 }
 
@@ -170,15 +178,15 @@ footer{
     height:50px;
     padding-top: 15px;
     background-color: transparent;
-    border:1px solid #000000;
+    border:1px solid #fff;
     text-align: center;
 }
 .social-media ul li a{
-    background-color: #fffefe;
+    background-color: #000;
 }
 .social-media ul li a:hover{
-    background-color: #000000;
-    color:#fffdfd;
+    background-color: #fff;
+    color:#000;
 }
 .link ul li a{
     display:block;
@@ -186,7 +194,7 @@ footer{
     font-size: 18px;
 }
 .link ul li a:hover{
-    color:#ffffff;
+    color:#000;
 }
 .Contact ul li{
     display: flex;
