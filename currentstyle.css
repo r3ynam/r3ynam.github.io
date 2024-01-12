@@ -41,7 +41,7 @@ header ul li a{
 header ul li a:hover,
 header ul li a.active{
     background:#ff5fff;
-    color:#2b1055;
+    color:#000000;
 }
 /* header ends */
 body {
