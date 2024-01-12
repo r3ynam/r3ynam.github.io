@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <title>Shop</title>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FAQs</title>
+        <title>Connective Resources</title>
         <link rel="shortcut icon" type="image/png" href="favicon.ico">
-        <link href="kayleestyle.css" rel="stylesheet">
+        <!-- <link href="stylesheet.css" rel="stylesheet"> -->
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <style>
             *{
@@ -16,11 +15,10 @@
             }
             body{
                  min-height: 100vh;
-                 background: white;
+                 background: rgb(0, 0, 0);
                  overflow-x: hidden;
                  width:100%;
                  font-family: 'Poppins', sans-serif;
-                 color:black;
                  /* background:linear-gradient(#ff6ef3,#6ee2ff,#b73bff) */
             }
            header{
@@ -46,13 +44,13 @@
             header ul li a{
                 text-decoration: none;
                 padding:6px 15px;
-                color:rgb(0, 0, 0);
+                color:#fff;
                 border-radius: 20px;
             }
             header ul li a:hover,
             header ul li a.active{
-                background:rgb(0, 0, 0);
-                color:pink;
+                background:#fff;
+                color:#2b1055;
             }
             img{
                 float:left;
@@ -63,76 +61,237 @@
             visibility: visible;
             opacity:1;
         }
-        .middle{
-            text-align:center;
-            margin-top: 20vh;
-        }
-        h1{
-            color:rgb(151, 148, 148);
-        }
-        section{
-            min-height: 100vh;
-            width:80%;
-            margin:0 auto;
+
+        /* shadow box thing */
+        .shadow{
+            position: relative;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
+            margin: 0px auto 50px;
+            min-width:250px;
+            width: 30vw;
+            height:30vh;
+            background: linear-gradient(0deg, #000,#262626);
         }
-        .title{
-            font-size:2rem;
-            margin-top:20vh;
+        .shadow:before,
+        .shadow:after{
+            content: '';
+            position: absolute;
+            top:-2px;
+            left:-2px;
+            background: linear-gradient(45deg, #00d5fb, #00c3ff, #00b7ff, #00ccff, #0099ff,
+            #00d5fb, #00c3ff, #00b7ff, #00ccff, #0099ff);
+            background-size: 400%;
+            width:calc(100% + 4px);
+            height:calc(100% + 4px);
+            z-index: -1;
+            animation: animate 20s linear infinite;
         }
-        .faq{
-            max-width: 700px;
-            margin-top: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid black;
-            cursor:pointer;
+        .shadow:after{
+            filter: blur(20px);
         }
-        .question{
+        @keyframes animate{
+            0%{
+                background-position: 0 0;
+            }
+            50%{
+                background-position: 400% 0;
+            }
+            100%{
+                background-position: 0 0;
+            }
+
+        }
+        h2{
+            color: rgb(255, 255, 255);
+        }
+        .goa{
+            display: flex;
+            position: relative;
+            width: 100vw;
+            height: auto;
+            margin: 220px auto 150px;
+            padding:0vw 0vw 0vw 5vw;
+            }
+         .khan{
+            display: flex;
+            height:90%;
+            width:auto;
+            padding-top: 2vh;
+            
+        } 
+        .mathnat{
+            display: flex;
+            height:30vh;
+            width:auto;
+            
+        }
+        .khanacademy{
+            display: flex;
+            width:80%;
+            padding:0vw 0vw 0vw 15vw;
+        } 
+        .codeorg{
+            display: flex;
+            width:80%;
+            padding:0vh 0vw 0vh 15vw;
+            margin-bottom: 10vh;
+        }     
+        p{
+            color:white;
+        } 
+        .academy{
+            display: flex;
+            padding:0vw 0vw 0vw 15vw;
+        }  
+        .mathnation{
+            display: flex;
+            padding:10vw 0vw 0vw 15vw ;
+        } 
+        .desmos{
+            display: flex;
+            height:25vh;
+            width:auto;
+             
+            margin-top: 2vh; 
+        }
+        .phet{
+            display: flex;
+            height:20vh;
+            width:auto;
+            padding-top: 5vh;
+        }
+        .myon{
+            display: flex;
+            height:20vh;
+            width:auto;
+            
+            margin-top: 6vh; 
+        }
+        .code{
+            display: flex;
+            height:30vh;
+            width:auto;
+        }
+        .ed{
+            display: flex;
+            height:90%;
+            width:auto;
+            padding-top: 2vh;
+            margin-left: 17.7vw;
+        }
+
+        .topbtn{
+                position:fixed;
+                width:50px;
+                height:50px;
+                background:rgb(25, 186, 214);
+                bottom:40px;
+                right:50px;
+                text-decoration: none;
+                text-align: center;
+                line-height: 50px;
+                z-index: 1001;
+            }
+        /* footer */
+        ul, li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            transition: .5s;
+            color:#fff;
+        }
+        footer{
+            background-color: rgb(24, 23, 23);
+            color:#fff;
+        }
+        .footer_info{
+            width:90%;
+            margin:0 auto;
             display:flex;
-            justify-content: space-between;
+            padding:50px 0;
+        }
+        .footer_info .footer_width {
+            padding:0 15px;
+        }
+        .footer_info h2{
+            margin-bottom: 20px;
+        }
+        .about, .Contact{
+            width:40%;
+        }
+        .link{
+            width:20%;
+        }
+        .social-media{
+            margin-top: 30px;
+        }
+        .social-media ul{
+            display:flex;
+        }
+        .social-media ul li a{
+            display:inline-block;
+            margin-right: 50px;
+            width:50px;
+            height:50px;
+            padding-top: 15px;
+            background-color: transparent;
+            border:1px solid #fff;
+            text-align: center;
+        }
+        .social-media ul li a{
+            background-color: #000;
+        }
+        .social-media ul li a:hover{
+            background-color: #fff;
+            color:#000;
+        }
+        .link ul li a{
+            display:block;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .link ul li a:hover{
+            color:#000;
+        }
+        .Contact ul li{
+            display: flex;
             align-items: center;
+            margin-bottom: 15px;
         }
-        .question h3{
-            font-size: 1.4rem;
+        .Contact ul li span{
+            margin-right: 15px;
         }
-        .answer{
-            max-height: 0;
-            overflow:hidden;
-            transition: max-height 1.4s ease;
+        .copy-right{
+            padding:15px 0;
+            text-align: center;
+            background-color: rgb(82, 80, 80);
         }
-        .answer p{
-            padding-top: 1rem;
-            line-height: 1.6;
-            font-size: 1rem;
+        .flexy{
+            justify-content: center;
         }
-        .faq.active .answer{
-            max-height: 300px;
-            animation: fade 1s ease-in-out;
-        }
-        .faq.active svg{
-            transform: rotate(180deg);
-        }
-        svg{
-            transition: transform 0.5s ease-in;
-        }
-        @keyframes fade{
-            from{
-                opacity:0;
-                transform: translateY(-10px);
+        @media screen and (max-width:992px){
+
+            .about, .contact{
+                width:35%;
             }
-            to{
-                opacity:1;
-                transform: translateY(0px);
+            .link{
+                width:30%;
             }
         }
-        .tough{
-            color:#65c4db;
+        @media screen and (max-width:767px){
+            .about, .contact, .link{
+                width:100%;
+                margin-bottom: 30px;
+            }
+            .footer_info{
+                flex-direction:column;
+            }
         }
         </style>
     </head>
-    <body>
+    <body style="margin-left: 10px;">
         <header>
             <img src="logo.png">
             <ul>
@@ -143,5 +302,105 @@
                 <li><a href="faq.html">FAQ</a></li>
              </ul> 
          </header>
+
+    <div class="flexy">
+        <div class="goa" >
+            <h2>Check out a few of these resources when there are no tutors around</h2>
+        </div>
+        <div>
+            <h2 class="academy">Khan Academy</h2>
+        </div>
+        <div class="shadow">
+            <a href="https://www.khanacademy.org" target="_blank"><img class="khan" src="Khan_Academy_Logo_SVG.svg"></a>
+        </div>
+        <div class="khanacademy">
+            <p>Khan Academy is an American non-profit educational organization created
+               in 2008 by Sal Khan. Its goal is creating a set of online tools that 
+               help educate students. The organization produces short lessons in the 
+               form of videos. Its website also includes supplementary practice exercises
+               and materials for educators. It has produced over 8,000 video lessons teaching
+               a wide spectrum of academic subjects, originally focusing on mathematics and
+               sciences. All resources are available for free to users of the website and 
+               application.</p>
+        </div>
+    </div>
+        
+    <div class="flexy">
+        <div>
+            <h2 class="mathnation">Math Nation</h2>
+        </div>
+        <div class="shadow">
+            <a href="https://www.mathnation.com/" target="_blank"><img class="mathnat" src="mathnation.png"></a>
+        </div>
+        <div class="khanacademy">
+            <p>Math Nation is a dynamic online (and printed workbook) resource that helps 
+               students master middle and high school mathematics. Math Nation provides 
+               24-hour access to high-quality instructional videos, workbooks, collaborative 
+               learning tools, and adaptive assessments and support. To ensure these materials 
+               cover every concept students need to master to succeed in middle and high school
+               math, they completely customize there content to the academic standards of each of
+               their individual partner states and work with local universities to validate their 
+               alignment for each state.</p>
+        </div>
+    </div>    
+        
+        
+    <div class="flexy">
+        <div>
+            <h2 class="mathnation">Gizmos</h2>
+        </div>
+        <div class="shadow">
+            <a href="https://gizmos.explorelearning.com/" target="_blank"><img class="khan" src="gizmos.png"></a>
+        </div>
+        <div class="khanacademy">
+            <p>ExploreLearning Gizmos is a Charlottesville, Virginia-based company which operates a 
+               large library of interactive online simulations for mathematics and science education
+               in grades 3 through 12. These simulations are called 'Gizmos'. The company's website describes 
+               their library of over 450 Gizmos as the world's largest collection of such materials.
+               "Gizmos" are a collection of online interactive simulations that are operated by 
+               ExploreLearning.The simulations are centered on science education and mathematics.
+               ExploreLearning also makes Reflex, which is an online, game-based system that helps 
+               students of all ability levels to develop instant recall of basic math facts.</p>
+        </div>
+    </div>
+
+    <div class="flexy">    
+        <div>
+            <h2 class="mathnation">Desmos</h2>
+        </div>
+        <div class="shadow">
+            <a href="https://www.desmos.com/" target="_blank"><img class="desmos" src="desmos.png"></a>
+        </div>
+        <div class="khanacademy">
+            <p>Desmos is an advanced graphing calculator implemented as a web application and a mobile
+               application written in JavaScript. In addition to graphing both equations and inequalities,
+                it also features lists, plots, regressions, interactive variables, graph restriction, 
+                simultaneous graphing, piece wise function graphing, polar function graphing, two types of
+                graphing grids, among other computational features commonly found in a programmable 
+                calculator.Users can create accounts and save the graphs and plots that they have created
+                to them. A permalink can then be generated which allow users to share their graphs and 
+                elect to be considered for staff picks.</p>
+        </div>
+    </div>    
+        
+    <div class="flexy">    
+        <div>
+            <h2 class="mathnation">PhET</h2>
+        </div>
+        <div class="shadow">
+            <a href="https://phet.colorado.edu/" target="_blank"><img class="phet" src="phet.png"></a>
+        </div>
+        <div class="khanacademy">
+            <p>PhET Interactive Simulations, a project at the University of Colorado Boulder, is a non-profit
+                 open educational resource project that creates and hosts explorable explanations. It was 
+                 founded in 2002 by Nobel Laureate Carl Wieman. Their stated mission is "To advance science and math 
+                 literacy and education worldwide through free interactive simulations." The project acronym 
+                 "PhET" originally stood for "Physics Education Technology," but PhET soon expanded to other 
+                 disciplines. The project now designs, develops, and releases over 125 free interactive simulations 
+                 for educational use in the fields of physics, chemistry, biology, earth science, and mathematics. </p>
+        </div>
+    </div>
+
+        
     </body>
 </html>    
