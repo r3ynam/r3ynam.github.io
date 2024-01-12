@@ -133,8 +133,8 @@ body{
 }
 /*footer*/
 footer{
-    background-color: rgb(24, 23, 23);
-    color:#fff;
+    background-color: rgb(255, 255, 255);
+    color:#000000;
     /* width:100vw; */
 }
 
