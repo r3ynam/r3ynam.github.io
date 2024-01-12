@@ -88,3 +88,20 @@ cvv.addEventListener('keyup', function(e){
         cvvBox.style.border="1px solid greeyellow";
     }
 })
+
+var counter = 0;
+window.addEventListener("DOMContentLoaded", move=()=>
+
+if (counter == 0){
+    j=1;
+    var elem =document.querySelector(".progress-done");
+    function frame(){
+        if(width >= 80){
+            clearInterval(main);
+        }
+        else{
+            width++;
+            elem.style.width = width
+        }
+    }
+})
