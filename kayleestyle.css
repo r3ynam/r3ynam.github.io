@@ -99,7 +99,28 @@ body{
     height: 110px;
     animation-delay: 3.5s;
 }
-
+.progress{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ddd;
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+}
+/*.progress-done{
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: #fff;
+    height: 100%;
+    background: linear-gradient(to left, rgb(253,2,140),rgb(240,199,230));
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    width: 0;
+    box-shadow: 0 0 3px -5px rgb(253, 2, 140);
+}*/
 @keyframes move{
     0%{
         transform: translateY(0) rotate(0deg); 
