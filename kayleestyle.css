@@ -109,7 +109,7 @@ body{
     width: 400px;
     border-radius: 20px;
 }
-/*.progress-done{
+.progress-done{
     font-family: sans-serif;
     font-weight: bolder;
     color: #fff;
@@ -120,7 +120,7 @@ body{
     place-items: center;
     width: 0;
     box-shadow: 0 0 3px -5px rgb(253, 2, 140);
-}*/
+}
 @keyframes move{
     0%{
         transform: translateY(0) rotate(0deg); 
