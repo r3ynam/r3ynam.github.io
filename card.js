@@ -75,3 +75,16 @@ else{
     eDate.style.border ="1px solid greenyellow"
 }
 });
+
+let cvv = document.getElementById('cvv');
+cvv.addEventListener('keyup', function(e){
+
+    let elen = cvv.value;
+    let cvvBox = document.getElementById('cvv-box');
+    if(elen.length<3){
+        cvvBox.style.border="1px solid red";
+    }
+    else{
+        cvvBox.style.border="1px solid greeyellow";
+    }
+})
