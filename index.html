@@ -145,5 +145,24 @@
                 <p>Click here to see all Copyrighted materials</p>
             </div></a>
             </footer>-->
+            <script>
+                let math = document.getElementById('math');
+                let text = document.getElementById('text');
+                let btn = document.getElementById('btn');
+                
+                window.addEventListener('scroll',function(){
+                    let value = window.scrollY;
+                    math.style.top = value * 0.25 + 'px';
+                    text.style.marginRight = value * 4 + 'px';
+                    text.style.marginTop = value * 1.5 + 'px';
+                    btn.style.marginTop = value * 1.5 + 'px';
+                })
+    
+    // document.getElementById("subscribe").addEventListener("click", () => {
+    //     document.getElementById("#modal-container").style.display = "none";
+    //     document.getElementById('html body').style.overflow = "visible"
+    // });
+    
+            </script>
     </body>  
 </html>
